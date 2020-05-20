@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.like {
+  background-color: red;
+}
+
+.music {
+  background-color: rgb(230, 241, 23)
+}
+
+.text {
+  color: rgb(230, 241, 23);
+ 
+  border-radius: 1em;
+  padding: 0.15em 0.8em;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(8, 8, 8);
+  background-color:rgb(240, 240, 77);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color:rgb(230, 241, 23);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
