@@ -20,7 +20,7 @@ likes: 0
 
 componentDidMount() {
 
-    fetch("http://localhost:3000/characters")
+    fetch("https://star-wars-backend.herokuapp.com/characters")
     .then(r => r.json())
     .then((resp) => {
       this.setState({
@@ -68,7 +68,7 @@ addLike = (cardObject) => {
   console.log("card object", cardObject)
   let{likes} = cardObject
   let id = cardObject.character.id
-  fetch(`http://localhost:3000/characters/${id}`, {
+  fetch(`https://star-wars-backend.herokuapp.com/characters/${id}`, {
     method: "PATCH",
     headers: {
       'content-type': 'application/json'
@@ -91,7 +91,7 @@ addLike = (cardObject) => {
 
 addOneCharacter = (characterObj) => {
 
-  fetch("http://localhost:3000/characters", {
+  fetch("https://star-wars-backend.herokuapp.com/characters", {
     method: "POST",
     headers: {
       'content-type': 'application/json'
@@ -113,7 +113,7 @@ addOneCharacter = (characterObj) => {
 handleDelete = (deleteObj) =>{
   console.log(deleteObj)
   let {id} =deleteObj.character
-  fetch(`http://localhost:3000/characters/${id}`, {
+  fetch(`https://star-wars-backend.herokuapp.com/characters/${id}`, {
     method: "DELETE"
 
   })
